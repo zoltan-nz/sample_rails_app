@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby "3.2.2"
 
 gem 'rails'
 gem 'image_processing'
@@ -10,7 +13,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
 gem 'puma'
-gem 'sass-rails'
+gem 'sassc-rails'
 gem 'jbuilder'
 gem 'bootsnap', require: false
 gem 'factory_bot'
@@ -19,6 +22,7 @@ gem 'jsbundling-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'sprockets-rails'
+gem "importmap-rails", "~> 1.2"
 
 group :development, :test do
   # gem 'debase'
@@ -49,4 +53,4 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "importmap-rails", "~> 1.2"
+

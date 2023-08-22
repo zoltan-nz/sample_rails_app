@@ -263,8 +263,6 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     rubyzip (2.3.2)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -352,7 +350,7 @@ DEPENDENCIES
   rails
   rails-controller-testing
   rspec-rails
-  sass-rails
+  sassc-rails
   selenium-webdriver
   simplecov
   spring
@@ -364,6 +362,9 @@ DEPENDENCIES
   web-console
   webdrivers
   will_paginate
+
+RUBY VERSION
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.19
